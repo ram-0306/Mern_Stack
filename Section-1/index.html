@@ -105,6 +105,15 @@
         color: black;
         text-decoration: none;
     }
+    .form-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-img{
+        background-image: url("https://www.freepik.com/free-vector/flat-design-illustration-customer-support_12982910.htm#query=contact%20us%20illustration&position=1&from_view=keyword&track=ais&uuid=2fa94498-6381-49fc-9231-fee1d53fe291");
+        background-position: center;
+        background-size: contain;
+    }
     
 </style>
 </head>
@@ -149,23 +158,29 @@
       <section class="section-contact">
 
         <h2 class="section-title">Contact Us</h2>
-        <form class="contact-form">
+        <div class="form-container">
+            <div class="contact-img">
 
+            </div>
+
+            <form class="contact-form">
+                
             <label >Name</label>
             <input class="text-input" type="text">
 
             <label >Email Address</label>
             <input class="text-input" type="email">
-
+            
             <label >Contact No.</label>
             <input class="text-input" type="text">
-
+            
             <label> Message</label>
             <textarea class="text-input-area"cols="30" rows="10"></textarea>
-
+            
             <button class="contact-btn">Submit</button>
-
+            
         </form>
+    </div>
       </section>
 
 </main>
