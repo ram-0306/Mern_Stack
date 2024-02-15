@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Assignment</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -15,71 +15,115 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
+            
         />
         <style>
-            .container-bg{
-                 background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=826&t=st=1707971594~exp=1707972194~hmac=49b9ce0c3bb5362b89fe7035d1bf3be1aa7bb861e08f6c03f958e53b198ce5c0);
-                 background-size: cover;
-                 
+            .container-size{
+                height: 600px;
+                width: 1000px;
+                /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;; */
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                background-color: #f7f7f7;
             }
-            .card-body img{
+            .card img{
                 height: 40px;
-                width: 40;
+                width: 80px;
+                background-size: cover;
             }
-            
+            .card-shadow1{
+                box-shadow: -21px -19px 4px 2px rgba(241,255,148,0.15);
+            }
+            .card-shadow2{
+                box-shadow: -21px -19px 4px 2px rgba(248,129,253,0.10);
+            }
+            .card-shadow3{
+                box-shadow: -21px -19px 4px 2px rgba(66,108,255,0.10);
+            }
+            .card-body button{
+                background-color: #f7f7f7;
+            }
         </style>
     </head>
 
     <body>
         
         <main>
+             <!-- container of the page -->
 
-             <div class="container img-fluid container-bg  my-5 py-5">
+            <div class="container  container-size mt-5 ">
+                 
+                
+               <h2 class="text-center col-md-6 mx-auto py-3">Get the most out of your mobile with the right subscription</h2> 
+            
+            <p class="text-center col-md-9 mx-auto mb-4">All devices come with free delivery or pickup as standards. See information on available shopping options on your locations.</p>
+                <!-- row of the card -->
+               <div class="row justify-content-around">
 
-                <h1 class="text-center">Get the most out of your mobile with the right subscription</h1>
-                <h6 class="text-center">All devices come with free delivery or pickup as standard. See information on available shopping options for your location.</>
+                <!-- first column -->
 
-                 <div class="row my-5">
+                <div class="col-md-3">
 
-                     <div class="col-md-4">
-                            <div class="card  shadow  align-items-center ">
-                            <div class="card-body ">
-                                <img src="https://logowik.com/content/uploads/images/ice9862.logowik.com.webp" alt="" class="img-fluid mb-3">
-                                <h5>Ice Mobile 10GB</h5>
-                                <p>Up to 100Mbit/s</p>
-                                <p><strong>299,-</strong>/month</p>
-                                <button class="btn btn-light shadow btn-sm rounded-4">Add Subscription</button>
-                            </div> 
-                        </div>
-                    </div>
+                    <div class="card card-shadow1 mt-2 border-0 rounded-4">
 
-                     <div class="col-md-4">
-                            <div class="card shadow  align-items-center">
-                            <div class="card-body ">
-                                <img class="img-fluid mb-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Telia_Scandinavia_Logo.svg/1280px-Telia_Scandinavia_Logo.svg.png" alt="">
-                                <h5>Ice Mobile 10GB</h5>
-                                <p>Up to 100Mbit/s</p>
-                                <p><strong>299,-</strong>/month</p>
-                                <button class="btn btn-light shadow btn-sm rounded-4">Add Subscription</button>
-                            </div> 
-                        </div>
-                    </div>
-
-                     <div class="col-md-4">
-                            <div class="card shadow shadow align-items-center ">
-                                <div class="card-body ">
-                                <img class="img-fluid mb-3" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Telenor_logo.png" alt="">
-                                <h5>Ice Mobile 10GB</h5>
-                                <p>Up to 100Mbit/s</p>
-                                <p><strong>299,-</strong>/month</p>
-                                <button class="btn btn-light shadow btn-sm rounded-4">Add Subscription</button>
-                            </div> 
-                        </div>
-                    </div>
                         
+                        <div class="card-body p-4">
+                            <img class="img-fluid  " src="https://upload.wikimedia.org/wikipedia/commons/9/96/Telenor_logo.png" alt="Title" />
+
+                            <h5 class="mt-2">Telenor Next Fast</h5>
+                            <p class="card-text">Upto 100Mbit/s</p>
+                            <p><strong class="fs-4">299,-</strong>/month</p>
+                             <button class="btn shadow mt-3 rounded-5">
+                                Add Subscription
+                             </button>
+                        </div>
+
                     </div>
-                    <button class="btn btn-dark d-flex justify-content-center btn-lg  mx-auto rounded-4">See all subscription</button>
+                    
                 </div>
+                <div class="col-md-3">
+
+                    <div class="card card-shadow2 mt-2 border-0 rounded-4">
+
+                        
+                        <div class="card-body p-4">
+                            <img class="img-fluid  " src="https://upload.wikimedia.org/wikipedia/commons/9/96/Telenor_logo.png" alt="Title" />
+
+                            <h5 class="mt-2">Telenor Next Fast</h5>
+                            <p class="card-text">Upto 100Mbit/s</p>
+                            <p><strong class="fs-4">299,-</strong>/month</p>
+                             <button class="btn shadow mt-3 rounded-5">
+                                Add Subscription
+                             </button>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                <div class="col-md-3">
+
+                    <div class="card border-0 card-shadow3 mt-2 rounded-4">
+
+                        
+                        <div class="card-body p-4">
+                            <img class="img-fluid  " src="https://upload.wikimedia.org/wikipedia/commons/9/96/Telenor_logo.png" alt="Title" />
+
+                            <h5 class="mt-2">Telenor Next Fast</h5>
+                            <p class="card-text">Upto 100Mbit/s</p>
+                            <p><strong class="fs-4">299,-</strong>/month</p>
+                             <button class="btn  shadow mt-3 rounded-5">
+                                Add Subscription
+                             </button>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+               
+               </div>
+               <button class="btn btn-dark mt-5 d-flex mx-auto justify-content-center fs-5 rounded-5">See all subscription</button>
+            </div>
 
         </main>
         
