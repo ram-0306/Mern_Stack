@@ -48,6 +48,12 @@
                 background-color: #00a0d6;
                 color: white;
             }
+            .fix ul li{
+                margin-left: .8rem;
+            }
+            .container a{
+                margin-left: .2rem;
+            }
         </style>
     </head>
 
@@ -62,14 +68,14 @@
                     <a class="navbar-brand" href="#">prime video</a>
                     
 
-                    <div class="collapse navbar-collapse mx-5" id="collapsibleNavId">
+                    <div class="collapse navbar-collapse mx-5 fix" id="collapsibleNavId">
 
                         <ul class="navbar-nav me-auto mt-2 mt-lg-0 gap-3">
                             
                             
                             <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link dropdown-toggle"
+                                    class="nav-link dropdown-toggle fs-5"
                                     href="#"
                                     id="dropdownId"
                                     data-bs-toggle="dropdown"
@@ -93,7 +99,7 @@
 
                             <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link dropdown-toggle"
+                                    class="nav-link dropdown-toggle fs-5"
                                     href="#"
                                     id="dropdownId"
                                     data-bs-toggle="dropdown"
@@ -115,14 +121,14 @@
                             </li>
                             <!-- store -->
 
-                            <li class="nav-item">
+                            <li class="nav-item fs-5">
                                 <a class="nav-link" href="#">Live TV</a>
                             </li>
                             <!-- live tv -->
                            
                             <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link dropdown-toggle"
+                                    class="nav-link dropdown-toggle fs-5"
                                     href="#"
                                     id="dropdownId"
                                     data-bs-toggle="dropdown"
@@ -145,11 +151,12 @@
                             <!-- categories -->
                                 
                             <li>
-                            <i class="fs-4 me-3 mt-2 fa-solid fa-magnifying-glass" style="color: #fcfcfc;"></i>
+                            <i class="fs-4 me-3 mt-2 fa-solid fa-magnifying-glass" style="color: #c9c9c9;"></i>
+                            
                             <!-- search -->
                            </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item fs-5">
                                 <a class="nav-link" href="#">Try For Free</a>
                             </li>
                             <!-- try for free -->
@@ -177,6 +184,11 @@
                                 </div>
                             </li>
                             <!-- EN -->
+                            <li> 
+                                <i class="fs-2 me-3 mt-1 fa-solid fa-circle-user" style="color: #c9c9c9;"></i>
+                                
+                                <!-- < search -->
+                               </li> 
 
                         </ul>
                         
@@ -184,6 +196,8 @@
                     </div>
                 </div>
             </nav>
+
+            <!-- Section-1 -->
 
             <section>
                 <div class="container-fluid hero-bg">
@@ -205,6 +219,8 @@
 
         <main>
 
+            <!-- Section-2 -->
+
             <section>
                 <div class="container-fluid hero-bg" style="background-image:linear-gradient(to right,#000 40%,transparent 58%), url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Right.jpg);">
                     <div class="row">
@@ -222,6 +238,8 @@
             </section>
 
         </main>
+
+        <!-- Section-3 -->
 
         <section>
             <div class="container-fluid">
@@ -252,14 +270,11 @@
 
                
         </section>
+
+        <!-- Section-4 -->
+
         <section>
-            <div class="container-fluid hero-bg" style="background-image:
-            linear-gradient(
-              to left,
-              #000 40%,
-              transparent 58%
-            ),
-            url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg);">
+            <div class="container-fluid hero-bg" style="background-image:linear-gradient(to left,#000 40%,transparent 58%),url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg);">
                 <div class="row d-flex justify-content-end m-1">
                 <div class="hero-section col-6 mt-5 ms-4">
                     <h1 class="text-light">Even better with Fire TV Stick</h1>
@@ -273,22 +288,24 @@
 
             </div>
         </section>
-       
+
+       <!-- Footer -->
+
         <footer style="background-color: #222222;">
             
             <div class="container-fluid col-md-6">
                 <div class="row p-3">
-                        <img class="d-grid col-3 mx-auto" src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="">
+                    <img class="d-grid col-3 mx-auto" src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/web_footer_logo._CB462908456_.png" alt="">
 
-                <p class="text-center">
-                    <a class="mx-2 link-color" href="">Terms and privacy notice</a>
-                    <a class="mx-2 link-color" href="">Send us feedback</a>
-                    <a class="mx-2 link-color" href="">Help</a>
-                </p>
+                    <p class="text-center">
+                       <a class="mx-2 link-color" href="">Terms and privacy notice</a>
+                       <a class="mx-2 link-color" href="">Send us feedback</a>
+                       <a class="mx-2 link-color" href="">Help</a>
+                    </p>
 
-                <span class="text-light text-center">&copy; 1996-2024, Amazon.com, Inc. or its affiliates</span>
+                <span class="text-light text-center">&copy; 1996-2024, Amazon.com, Inc. or its affiliates<span>
 
-            </div>
+               </div>
             </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
