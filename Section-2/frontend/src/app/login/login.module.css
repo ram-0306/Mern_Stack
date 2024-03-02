@@ -1,6 +1,35 @@
-.loginBtn{
-    background-color: rgb(0, 0, 0);
-    color: rgb(240, 246, 255);
-    padding: 10px 20px;
-    border:1px solid black
-}
+         
+                  
+         .loginBtn {
+            background-image: linear-gradient(to right, hsla(211, 96%, 62%, 1)0%, hsla(295, 94%, 76%, 1)51% ,hsla(211, 96%, 62%, 1));
+            padding: 8px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 10px;
+            display: block;
+            margin-top: 10px;
+            
+          }
+
+          .loginBtn:hover {
+            background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+          }
+
+          .inputElements{
+            /* background: rgba(255, 255, 255, 0.296); */
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+
+          }
+          
+         
+         
+    
+ 
