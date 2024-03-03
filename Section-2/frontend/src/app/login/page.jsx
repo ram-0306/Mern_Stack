@@ -5,7 +5,7 @@ import classes from './login.module.css';
 const login = () => {
   return (
 
-    <div className='container d-flex justify-content-center my-5 p-5 ' style={{background: 'linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%)', height:400}}>
+    <div className='container d-flex justify-content-center my-3 p-5 ' style={{background: 'linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%)', height:400}}>
      <div className='loginBody border p-5 shadow'>
 
        <h2 className='text-light'>Login to Your Account</h2>

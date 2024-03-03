@@ -8,6 +8,8 @@ const Home = () => {
     <Link href="/contact">Login</Link>
     <Link href="/signup">Login</Link>
     <Link href="/contact">Login</Link>
+    <Link href="/eventHandling">EventHandling</Link>
+
     
       <h1 style={{ color:'red', fontSize: '2em'}}>Home Page</h1>
       <p>Welcome to Next.js!</p>
