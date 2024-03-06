@@ -10,6 +10,7 @@ const Home = () => {
     <Link href="/about">About</Link>
     <Link href="/eventHandling">EventHandling</Link>
     <Link href="/todolist">To Do List</Link>
+    <Link href="/comment">Comment App</Link>
 
     
       <h1 style={{ color:'red', fontSize: '2em'}}>Home Page</h1>
