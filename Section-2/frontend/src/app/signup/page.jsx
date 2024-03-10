@@ -15,6 +15,8 @@ const Signup = () => {
    .required('Password is required'),
    cpassword: Yup.string()
    .required('Confirm Password is required')
+   .
+
   });
 
   const signupForm = useFormik({
@@ -120,6 +122,7 @@ const Signup = () => {
                           placeholder=""
                         />
                         <small class="text-muted">Passwords Must Match</small>
+                        
                       </div>
                       <div className="form-check mb-4">
                         <input
