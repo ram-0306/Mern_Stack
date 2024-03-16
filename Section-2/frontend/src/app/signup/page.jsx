@@ -15,7 +15,6 @@ const Signup = () => {
    .required('Password is required'),
    cpassword: Yup.string()
    .required('Confirm Password is required')
-   .
 
   });
 
