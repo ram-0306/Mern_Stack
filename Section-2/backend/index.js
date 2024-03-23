@@ -1,6 +1,7 @@
 //IMPORT
 const express = require('express');
 const cors = require('cors');
+const port = 5000;
 
 //INITIALIZE
 const app = express();
@@ -9,11 +10,12 @@ const postRouter =  require('./routers/postRouter');
 
 //middleware 
 
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:3000']
+}));
 
 app.use('/post', postRouter);
 
-const port = 5000;
 
 app.get('/',(req, res) =>{
     res.send('response from exprss');
