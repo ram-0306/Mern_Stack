@@ -1,5 +1,6 @@
 //IMPORT
 const express = require('express');
+const cors = require('cors');
 
 //INITIALIZE
 const app = express();
@@ -8,6 +9,11 @@ const postRouter =  require('./routers/postRouter');
 
 
 //middleware 
+
+app.use(cors());
+
+app.use('/post', postRouter);
+
 
 app.use('/post', postRouter);
 
