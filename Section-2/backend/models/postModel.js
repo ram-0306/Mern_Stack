@@ -1,12 +1,13 @@
-const { Schema, model} =require("./connection");
+const {model, Schema} = require('../connection');
 
 const mySchema = new Schema({
-   uploadedBy : {type : String, require : true},
-   title : {type : String, require : true},
-   image : String,
-   uploadDate : Date,
-   likes : {type : Number,  default :0},
-   shares : {type : Number,  default :0}
+    title : {type : String, required : true},
+    user : String,
+    postedAt : Date,
+    description : String,
+    image : String,
+    likes : {type : Number, default : 0},
+    shares : {type : Number, default : 0}
 });
 
-module.exports = model('socialpost', mySchema);
+module.exports = model('SocialPost', mySchema);

@@ -1,19 +1,51 @@
 const express = require('express');
-
 const router = express.Router();
+const Model = require('../models/postModel');
 
-router.get('/add', (req, res)=>{
-    res.send('post nd response');
+router.post('/add', (req, res) => {
+    console.log(req.body);
+
+    // to save data in mongodb
+    new Model(req.body).save()
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+
+});
+
+router.get('/getall', (req, res) => {
+    
+    Model.find()
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+// : denotes url parameter
+router.delete('/delete/:id', (req, res) => {
+    Model.findByIdAndDelete(req.params.id)
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 })
 
-router.get('/delete', (req, res)=>{
-    res.send('Deleted');
-})
-router.get('/getAll', (req, res)=>{
-    res.send('getAll');
-})
-router.get('/update', (req, res)=>{
-    res.send('Updated');
+router.put( '/update/:id', (req, res) => {
+    Model.findByIdAndUpdate(req.params.id, req.body)
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 })
 
 module.exports = router;
