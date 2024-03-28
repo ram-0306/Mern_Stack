@@ -18,13 +18,7 @@ router.post('/add', (req, res) => {
 
 router.get('/getall', (req, res) => {
     
-    Model.find()
-    .then((result) => {
-        res.status(200).json(result);
-    }).catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-    });
+   res.send('post get all response')
 });
 
 // : denotes url parameter

@@ -1,5 +1,6 @@
 'use client';
 import { useFormik } from 'formik';
+import { enqueueSnackbar } from 'notistack';
 import React from 'react'
 
 const UploadPost = () => {
@@ -26,8 +27,14 @@ const UploadPost = () => {
             })
             .then((response) => {
                 console.log(response.status);
+                if(response.status === 200){
+                    enqueueSnackbar('Post Uploaded Successfully',{variant :'success'});
+                }else{
+                    enqueueSnackbar('Something Went Wrong',{variant :'error'});
+                }
             }).catch((err) => {
                 console.log(err);
+                enqueueSnackbar('Something Went Wrong',{variant :'error'});
             });
         }
     })

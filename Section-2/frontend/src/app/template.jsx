@@ -2,6 +2,7 @@
 import Navbar from '@/components/navbar'
 import React, { useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { SnackbarProvider } from 'notistack';
 
 const Template = ({children}) => {
 
@@ -10,10 +11,10 @@ const Template = ({children}) => {
     }, [])
     
   return (
-    <div>
+    <SnackbarProvider anchorOrigin={{vertical:'top' , horizontal :'center'}} autoHideDuration={1000}>
        <Navbar/>
        {children}
-    </div>
+    </SnackbarProvider>
   )
 }
 
